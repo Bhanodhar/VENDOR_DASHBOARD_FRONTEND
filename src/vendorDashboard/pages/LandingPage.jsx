@@ -36,17 +36,17 @@ const LandingPage = () => {
       }
   },[])
 
-
-
-  const logOutHandler =()=>{
-    confirm("Are you sure to logout?")
-      localStorage.removeItem("loginToken");
-      localStorage.removeItem("firmId");
-      localStorage.removeItem('firmName');
-      setShowLogOut(false)
-      setShowFirmTitle(true)
-      setShowWelcome(false)
+const logOutHandler = () => {
+  const isConfirmed = confirm("Are you sure to logout?");
+  if (isConfirmed) {
+    localStorage.removeItem("loginToken");
+    localStorage.removeItem("firmId");
+    localStorage.removeItem('firmName');
+    setShowLogOut(false);
+    setShowFirmTitle(true);
+    setShowWelcome(false);
   }
+};
 
 const showLoginHandler =()=>{
     setShowLogin(true)
