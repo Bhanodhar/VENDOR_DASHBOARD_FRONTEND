@@ -291,3 +291,116 @@ h3 {
 .loaderSection {
     z-index: 10000;
 }
+
+/* Responsive Design */
+
+/* Mobile Styles (max-width: 768px) */
+@media (max-width: 768px) {
+    .navSection {
+        height: 60px;
+        padding: 0 10px;
+        font-size: medium;
+    }
+
+    .sideBarSection {
+        max-width: 100%;
+        height: auto;
+        padding: 10px;
+        position: relative;
+    }
+
+    .sideBarSection ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .sideBarSection ul li {
+        margin-bottom: 0;
+        font-size: small;
+    }
+
+    .collectionSection {
+        flex-direction: column;
+    }
+
+    .loginSection,
+    .registerSection,
+    .firmSection,
+    .productSection,
+    .welcomeSection {
+        padding: 10px;
+    }
+
+    .authForm,
+    .tableForm {
+        max-width: 90%;
+        margin-top: 10px;
+    }
+
+    .authForm input,
+    .tableForm input {
+        max-width: 90%;
+    }
+
+    .authForm label,
+    .tableForm label {
+        max-width: 90%;
+    }
+
+    .product-table {
+        width: 95vw;
+        font-size: small;
+        overflow-x: auto;
+        display: block;
+    }
+
+    .product-table th,
+    .product-table td {
+        padding: 5px;
+        white-space: nowrap;
+    }
+
+    .landingImage img {
+        max-width: 300px;
+    }
+
+    .welcomeSection h2 {
+        font-size: 2rem;
+        top: -40px;
+    }
+
+    .showPassword {
+        right: 20px;
+        bottom: 80px;
+    }
+
+    .checboxContainer input {
+        margin-left: 0;
+    }
+
+    .checboxContainer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* Tablet Styles (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .sideBarSection {
+        max-width: 20%;
+    }
+
+    .authForm,
+    .tableForm {
+        max-width: 70%;
+    }
+
+    .product-table {
+        width: 90vw;
+    }
+
+    .landingImage img {
+        max-width: 400px;
+    }
+}
